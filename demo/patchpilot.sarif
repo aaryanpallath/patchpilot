@@ -1,0 +1,1389 @@
+{
+ "version": "2.1.0",
+ "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+ "runs": [
+  {
+   "tool": {
+    "driver": {
+     "name": "patchpilot",
+     "rules": [
+      {
+       "id": "PYSEC-2022-202"
+      },
+      {
+       "id": "PYSEC-2023-192"
+      },
+      {
+       "id": "PYSEC-2023-212"
+      },
+      {
+       "id": "PYSEC-2023-221"
+      },
+      {
+       "id": "PYSEC-2023-57"
+      },
+      {
+       "id": "PYSEC-2023-58"
+      },
+      {
+       "id": "PYSEC-2023-62"
+      },
+      {
+       "id": "PYSEC-2023-74"
+      },
+      {
+       "id": "PYSEC-2025-183"
+      },
+      {
+       "id": "PYSEC-2026-120"
+      },
+      {
+       "id": "PYSEC-2026-141"
+      },
+      {
+       "id": "PYSEC-2026-1471"
+      },
+      {
+       "id": "PYSEC-2026-1472"
+      },
+      {
+       "id": "PYSEC-2026-1473"
+      },
+      {
+       "id": "PYSEC-2026-1474"
+      },
+      {
+       "id": "PYSEC-2026-1475"
+      },
+      {
+       "id": "PYSEC-2026-175"
+      },
+      {
+       "id": "PYSEC-2026-177"
+      },
+      {
+       "id": "PYSEC-2026-179"
+      },
+      {
+       "id": "PYSEC-2026-1860"
+      },
+      {
+       "id": "PYSEC-2026-1872"
+      },
+      {
+       "id": "PYSEC-2026-1873"
+      },
+      {
+       "id": "PYSEC-2026-1994"
+      },
+      {
+       "id": "PYSEC-2026-1995"
+      },
+      {
+       "id": "PYSEC-2026-1996"
+      },
+      {
+       "id": "PYSEC-2026-1998"
+      },
+      {
+       "id": "PYSEC-2026-1999"
+      },
+      {
+       "id": "PYSEC-2026-2043"
+      },
+      {
+       "id": "PYSEC-2026-2044"
+      },
+      {
+       "id": "PYSEC-2026-2045"
+      },
+      {
+       "id": "PYSEC-2026-2046"
+      },
+      {
+       "id": "PYSEC-2026-2151"
+      },
+      {
+       "id": "PYSEC-2026-2275"
+      },
+      {
+       "id": "PYSEC-2026-2320"
+      },
+      {
+       "id": "PYSEC-2026-4140"
+      },
+      {
+       "id": "PYSEC-2026-4144"
+      },
+      {
+       "id": "PYSEC-2026-4145"
+      },
+      {
+       "id": "PYSEC-2026-4147"
+      },
+      {
+       "id": "PYSEC-2026-4148"
+      },
+      {
+       "id": "PYSEC-2026-4175"
+      },
+      {
+       "id": "PYSEC-2026-4177"
+      },
+      {
+       "id": "PYSEC-2026-4312"
+      },
+      {
+       "id": "bandit:B105"
+      },
+      {
+       "id": "bandit:B113"
+      },
+      {
+       "id": "bandit:B201"
+      },
+      {
+       "id": "bandit:B506"
+      },
+      {
+       "id": "bandit:B602"
+      },
+      {
+       "id": "bandit:B608"
+      },
+      {
+       "id": "semgrep oss:jwt-python-hardcoded-secret"
+      }
+     ]
+    }
+   },
+   "results": [
+    {
+     "ruleId": "PYSEC-2026-4145",
+     "level": "error",
+     "message": {
+      "text": "PyJWT: Asymmetric-PEM detection bypass: whitespace/line-ending-mutated public keys skip the HS/asymmetric confusion guard (risk 10.08, fix within 7 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "2ca56267a473a8fa"
+     },
+     "properties": {
+      "security-severity": "9.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2022-202",
+     "level": "error",
+     "message": {
+      "text": "Key confusion through non-blocklisted public key formats (risk 7.38, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "f51eaab8ca41f705"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2023-62",
+     "level": "error",
+     "message": {
+      "text": "Flask vulnerable to possible disclosure of permanent session cookie due to missing Vary: Cookie header (risk 7.35, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 2
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "ff97ff71397138e6"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-179",
+     "level": "error",
+     "message": {
+      "text": "PyJWT: Public-key JWK accepted as HMAC secret enables forged HS256 tokens when mixed families are allowed (risk 7.12, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "81bb305ca02c1049"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-120",
+     "level": "error",
+     "message": {
+      "text": "PyJWT accepts unknown `crit` header extensions (risk 7.08, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "c45969ebb59b3495"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-4144",
+     "level": "error",
+     "message": {
+      "text": "PyJWT: PyJWKClient follows redirects when fetching JWKS (risk 7.04, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "6235cc6d88668752"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "bandit:B105",
+     "level": "error",
+     "message": {
+      "text": "Possible secret in source (Secret Keyword) (risk 7, fix within 30 days; reported by bandit, detect-secrets)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/app.py"
+        },
+        "region": {
+         "startLine": 16
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "98684ac114dacbae"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "semgrep oss:jwt-python-hardcoded-secret",
+     "level": "error",
+     "message": {
+      "text": "Hardcoded JWT secret or private key is used (risk 7, fix within 30 days; reported by semgrep oss)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/app.py"
+        },
+        "region": {
+         "startLine": 42
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "e68b72c1a4eb0fd4"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "bandit:B506",
+     "level": "error",
+     "message": {
+      "text": "Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load(). (risk 7, fix within 30 days; reported by bandit, semgrep oss)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/app.py"
+        },
+        "region": {
+         "startLine": 82
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "73e646a0318f29c1"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "bandit:B602",
+     "level": "error",
+     "message": {
+      "text": "subprocess call with shell=True identified, security issue. (risk 7, fix within 30 days; reported by bandit, semgrep oss)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/app.py"
+        },
+        "region": {
+         "startLine": 94
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "bab5607fab6a0026"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "bandit:B201",
+     "level": "error",
+     "message": {
+      "text": "A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code. (risk 7, fix within 30 days; reported by bandit, semgrep oss)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/app.py"
+        },
+        "region": {
+         "startLine": 99
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "065c4b1d875ada8a"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-2043",
+     "level": "error",
+     "message": {
+      "text": "Werkzeug debugger vulnerable to remote execution when interacting with attacker controlled domain (risk 5.57, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "2e72e49e3e9cef81"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1996",
+     "level": "error",
+     "message": {
+      "text": "Decompression-bomb safeguards bypassed when following HTTP redirects (streaming API) (risk 5.47, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "bbc2dd03dad62c75"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2023-58",
+     "level": "error",
+     "message": {
+      "text": "High resource usage when parsing multipart form data with many fields (risk 5.18, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "55893aefd2dfea34"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2023-192",
+     "level": "error",
+     "message": {
+      "text": "`Cookie` HTTP header isn't stripped on cross-origin redirects (risk 5.17, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "fdac2979e6331863"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1998",
+     "level": "error",
+     "message": {
+      "text": "urllib3 allows an unbounded number of links in the decompression chain (risk 5.03, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "d0c632a7ac5ba6bb"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1994",
+     "level": "error",
+     "message": {
+      "text": "urllib3 streaming API improperly handles highly compressed data (risk 5.03, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "fab9d72ff6b57ba3"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-141",
+     "level": "error",
+     "message": {
+      "text": "urllib3: Sensitive headers forwarded across origins in proxied low-level redirects (risk 4.97, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "d7bad4cc1266df3c"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-4177",
+     "level": "error",
+     "message": {
+      "text": "urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory (risk 4.97, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "49de6e102622530d"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-4175",
+     "level": "error",
+     "message": {
+      "text": "urllib3: HTTPS proxy TLS configuration may be ignored or overridden (risk 4.94, fix within 30 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "db9171472161b768"
+     },
+     "properties": {
+      "security-severity": "8.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2023-74",
+     "level": "warning",
+     "message": {
+      "text": "Unintended leak of Proxy-Authorization header in requests (risk 4.48, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 5
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "7c0a0c7bd6bd83ff"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1872",
+     "level": "warning",
+     "message": {
+      "text": "Requests vulnerable to .netrc credentials leak via malicious URLs (risk 4.16, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 5
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "a98dda65ededda68"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-4140",
+     "level": "warning",
+     "message": {
+      "text": "PyJWT: PyJWKClient still amplifies unauthenticated JWKS fetches on unknown kid values (incomplete fix of CVE-2026-48524) (risk 4.07, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "9c6840d2c19c25e7"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1873",
+     "level": "warning",
+     "message": {
+      "text": "Requests `Session` object does not verify requests after making first request with verify=False (risk 4.05, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 5
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "c0799abaff15055e"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-175",
+     "level": "warning",
+     "message": {
+      "text": "PyJWKClient: missing scheme allowlist enables CVE-2024-21643-class SSRF + token forgery via file://, ftp://, data: schemes (risk 4.04, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "1657d96074c90f25"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2025-183",
+     "level": "warning",
+     "message": {
+      "text": "pyjwt v2.10.1 was discovered to contain weak encryption (risk 4.03, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "d82db1fb6c12e5f5"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-4148",
+     "level": "warning",
+     "message": {
+      "text": "PyJWT: ReDoS vulnerability when calling the `is_pem_format` function. (risk 4.03, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "67b0a876dab17de4"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-4147",
+     "level": "warning",
+     "message": {
+      "text": "PyJWT: Non-canonical signature segments enable raw-token revocation bypass (risk 4.03, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "6e9ee9cda3598591"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-2275",
+     "level": "warning",
+     "message": {
+      "text": "Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function (risk 4.03, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 5
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "c448f33a9ea967d7"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "bandit:B608",
+     "level": "warning",
+     "message": {
+      "text": "Possible SQL injection vector through string-based query construction. (risk 4, fix within 90 days; reported by bandit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/app.py"
+        },
+        "region": {
+         "startLine": 75
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "a966dca1c2d1e361"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1995",
+     "level": "warning",
+     "message": {
+      "text": "urllib3's Proxy-Authorization request header isn't stripped during cross-origin redirects (risk 2.93, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "28a3978fe956ba66"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2023-221",
+     "level": "warning",
+     "message": {
+      "text": "Werkzeug DoS: High resource usage when parsing multipart/form-data containing a large part with CR/LF character at the beginning (risk 2.92, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "790f36f69c8b25bd"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1860",
+     "level": "warning",
+     "message": {
+      "text": "Werkzeug possible resource exhaustion when parsing file data in forms (risk 2.92, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "c94fb179b3ce44c4"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1474",
+     "level": "warning",
+     "message": {
+      "text": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter (risk 2.91, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 4
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "da04d42bf6987df0"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1473",
+     "level": "warning",
+     "message": {
+      "text": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter (risk 2.9, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 4
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "c9e951d5498fbd1a"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-2045",
+     "level": "warning",
+     "message": {
+      "text": "Werkzeug safe_join not safe on Windows (risk 2.89, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "6f2ae44a52f57e6a"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2023-212",
+     "level": "warning",
+     "message": {
+      "text": "urllib3's request body not stripped after redirect from 303 status changes request method to GET (risk 2.87, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "4ff3ea150047e134"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-2320",
+     "level": "warning",
+     "message": {
+      "text": " Werkzeug safe_join() allows Windows special device names (risk 2.87, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "0f12e3149d84111c"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1475",
+     "level": "warning",
+     "message": {
+      "text": "Jinja has a sandbox breakout through indirect reference to format method (risk 2.86, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 4
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "96879077296b887e"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1471",
+     "level": "warning",
+     "message": {
+      "text": "Jinja2 vulnerable to sandbox breakout through attr filter selecting format method (risk 2.86, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 4
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "3e11c90a25ea459a"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-2046",
+     "level": "warning",
+     "message": {
+      "text": "Werkzeug safe_join() allows Windows special device names (risk 2.86, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "2a6fea7d94ced1a1"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1999",
+     "level": "warning",
+     "message": {
+      "text": "urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation (risk 2.85, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 6
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "98e24ffa6d284192"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-2044",
+     "level": "warning",
+     "message": {
+      "text": " Werkzeug safe_join() allows Windows special device names with compound extensions (risk 2.85, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "27399e9da555ad75"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-4312",
+     "level": "warning",
+     "message": {
+      "text": "Werkzeug safe_join() allows Windows special device names (risk 2.84, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "97dd4d2af74c0a58"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-1472",
+     "level": "warning",
+     "message": {
+      "text": "Jinja has a sandbox breakout through malicious filenames (risk 2.83, fix within 90 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 4
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "8514bd6216a9f7e1"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "bandit:B113",
+     "level": "warning",
+     "message": {
+      "text": "Call to requests without timeout (risk 2.4, fix within 90 days; reported by bandit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/app.py"
+        },
+        "region": {
+         "startLine": 88
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "64d6f3d1d9c1ef14"
+     },
+     "properties": {
+      "security-severity": "5.5"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-2151",
+     "level": "note",
+     "message": {
+      "text": "Flask session does not add `Vary: Cookie` header when accessed in some ways (risk 1.02, fix within 180 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 2
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "aff3b09a9ccf7b8f"
+     },
+     "properties": {
+      "security-severity": "2.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2026-177",
+     "level": "note",
+     "message": {
+      "text": "PyJWKClient unbounded JWKS endpoint requests via attacker-controlled kid values (DoS) (risk 1.01, fix within 180 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 7
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "fd80bc7f02e01b49"
+     },
+     "properties": {
+      "security-severity": "2.0"
+     }
+    },
+    {
+     "ruleId": "PYSEC-2023-57",
+     "level": "note",
+     "message": {
+      "text": "Incorrect parsing of nameless cookies leads to __Host- cookies bypass (risk 0.71, fix within 180 days; reported by pip-audit)"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "loan-api/requirements.txt"
+        },
+        "region": {
+         "startLine": 3
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "patchpilot/v1": "566f164fb85a5570"
+     },
+     "properties": {
+      "security-severity": "2.0"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2023 @@
+{
+ "raw_reports": 87,
+ "findings": [
+  {
+   "kind": "dependency",
+   "title": "PyJWT: Asymmetric-PEM detection bypass: whitespace/line-ending-mutated public keys skip the HS/asymmetric confusion guard",
+   "severity": "critical",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-4145"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-102268",
+    "GHSA-ffc3-869f-jxw9",
+    "PYSEC-2026-4145"
+   ],
+   "fix_versions": [
+    "2.14.0"
+   ],
+   "fingerprint": "2ca56267a473a8fa",
+   "reachability": "direct",
+   "epss": 0.00202,
+   "kev": false,
+   "risk": 10.08,
+   "due_days": 7,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Key confusion through non-blocklisted public key formats",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2022-202"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2022-29217",
+    "GHSA-ffqj-6fqr-9h24",
+    "PYSEC-2022-202"
+   ],
+   "fix_versions": [
+    "2.4.0"
+   ],
+   "fingerprint": "f51eaab8ca41f705",
+   "reachability": "direct",
+   "epss": 0.01355,
+   "kev": false,
+   "risk": 7.38,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Flask vulnerable to possible disclosure of permanent session cookie due to missing Vary: Cookie header",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2023-62"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 2,
+   "snippet": null,
+   "cwe": [],
+   "package": "flask",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2023-30861",
+    "GHSA-m2qf-hxjv-5gpq",
+    "PYSEC-2023-62"
+   ],
+   "fix_versions": [
+    "2.2.5",
+    "2.3.2"
+   ],
+   "fingerprint": "ff97ff71397138e6",
+   "reachability": "direct",
+   "epss": 0.01261,
+   "kev": false,
+   "risk": 7.35,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "PyJWT: Public-key JWK accepted as HMAC secret enables forged HS256 tokens when mixed families are allowed",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-179"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-48526",
+    "GHSA-xgmm-8j9v-c9wx",
+    "PYSEC-2026-179"
+   ],
+   "fix_versions": [
+    "2.13.0"
+   ],
+   "fingerprint": "81bb305ca02c1049",
+   "reachability": "direct",
+   "epss": 0.00427,
+   "kev": false,
+   "risk": 7.12,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "PyJWT accepts unknown `crit` header extensions",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-120"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-32597",
+    "GHSA-752w-5fwx-jx9f",
+    "PYSEC-2026-120"
+   ],
+   "fix_versions": [
+    "2.12.0"
+   ],
+   "fingerprint": "c45969ebb59b3495",
+   "reachability": "direct",
+   "epss": 0.00273,
+   "kev": false,
+   "risk": 7.08,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "PyJWT: PyJWKClient follows redirects when fetching JWKS",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-4144"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-102267",
+    "GHSA-9v7f-9g4p-ffgj",
+    "PYSEC-2026-4144"
+   ],
+   "fix_versions": [
+    "2.14.0"
+   ],
+   "fingerprint": "6235cc6d88668752",
+   "reachability": "direct",
+   "epss": 0.00159,
+   "kev": false,
+   "risk": 7.04,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "secret",
+   "title": "Possible secret in source (Secret Keyword)",
+   "severity": "high",
+   "tools": [
+    "bandit",
+    "detect-secrets"
+   ],
+   "rule_ids": [
+    "bandit:B105",
+    "detect-secrets:Secret Keyword"
+   ],
+   "confidence": "high",
+   "file": "loan-api/app.py",
+   "line": 16,
+   "snippet": "SECRET_KEY = \"gmf-demo-signing-key-2019\"  # hardcoded signing key",
+   "cwe": [
+    "CWE-259",
+    "CWE-798"
+   ],
+   "package": null,
+   "version": null,
+   "advisories": [],
+   "fix_versions": [],
+   "fingerprint": "98684ac114dacbae",
+   "reachability": "direct",
+   "epss": null,
+   "kev": false,
+   "risk": 7.0,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "code",
+   "title": "Hardcoded JWT secret or private key is used",
+   "severity": "high",
+   "tools": [
+    "semgrep oss"
+   ],
+   "rule_ids": [
+    "semgrep oss:jwt-python-hardcoded-secret"
+   ],
+   "confidence": "high",
+   "file": "loan-api/app.py",
+   "line": 42,
+   "snippet": "return jwt.encode(payload, SECRET_KEY, algorithm=\"HS256\").decode(\"utf-8\")  # PyJWT 1.x returns bytes",
+   "cwe": [
+    "CWE-522"
+   ],
+   "package": null,
+   "version": null,
+   "advisories": [],
+   "fix_versions": [],
+   "fingerprint": "e68b72c1a4eb0fd4",
+   "reachability": "direct",
+   "epss": null,
+   "kev": false,
+   "risk": 7.0,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "code",
+   "title": "Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().",
+   "severity": "high",
+   "tools": [
+    "bandit",
+    "semgrep oss"
+   ],
+   "rule_ids": [
+    "bandit:B506",
+    "semgrep oss:avoid-pyyaml-load"
+   ],
+   "confidence": "high",
+   "file": "loan-api/app.py",
+   "line": 82,
+   "snippet": "config = yaml.load(request.data, Loader=yaml.Loader)  # unsafe loader: arbitrary object construction",
+   "cwe": [
+    "CWE-20",
+    "CWE-502"
+   ],
+   "package": null,
+   "version": null,
+   "advisories": [],
+   "fix_versions": [],
+   "fingerprint": "73e646a0318f29c1",
+   "reachability": "direct",
+   "epss": null,
+   "kev": false,
+   "risk": 7.0,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "code",
+   "title": "subprocess call with shell=True identified, security issue.",
+   "severity": "high",
+   "tools": [
+    "bandit",
+    "semgrep oss"
+   ],
+   "rule_ids": [
+    "bandit:B602",
+    "semgrep oss:dangerous-subprocess-use",
+    "semgrep oss:subprocess-injection",
+    "semgrep oss:subprocess-shell-true"
+   ],
+   "confidence": "high",
+   "file": "loan-api/app.py",
+   "line": 94,
+   "snippet": "out = subprocess.check_output(\"df -h \" + request.args.get(\"path\", \"/\"), shell=True)  # command injection",
+   "cwe": [
+    "CWE-78"
+   ],
+   "package": null,
+   "version": null,
+   "advisories": [],
+   "fix_versions": [],
+   "fingerprint": "bab5607fab6a0026",
+   "reachability": "direct",
+   "epss": null,
+   "kev": false,
+   "risk": 7.0,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "code",
+   "title": "A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code.",
+   "severity": "high",
+   "tools": [
+    "bandit",
+    "semgrep oss"
+   ],
+   "rule_ids": [
+    "bandit:B201",
+    "semgrep oss:debug-enabled"
+   ],
+   "confidence": "high",
+   "file": "loan-api/app.py",
+   "line": 99,
+   "snippet": "app.run(debug=True)",
+   "cwe": [
+    "CWE-489",
+    "CWE-94"
+   ],
+   "package": null,
+   "version": null,
+   "advisories": [],
+   "fix_versions": [],
+   "fingerprint": "065c4b1d875ada8a",
+   "reachability": "direct",
+   "epss": null,
+   "kev": false,
+   "risk": 7.0,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Werkzeug debugger vulnerable to remote execution when interacting with attacker controlled domain",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-2043"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2024-34069",
+    "GHSA-2g68-c3qc-8985",
+    "PYSEC-2026-2043"
+   ],
+   "fix_versions": [
+    "3.0.3"
+   ],
+   "fingerprint": "2e72e49e3e9cef81",
+   "reachability": "via flask",
+   "epss": 0.03397,
+   "kev": false,
+   "risk": 5.57,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Decompression-bomb safeguards bypassed when following HTTP redirects (streaming API)",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1996"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2026-21441",
+    "GHSA-38jv-5279-wg99",
+    "PYSEC-2026-1996"
+   ],
+   "fix_versions": [
+    "2.6.3"
+   ],
+   "fingerprint": "bbc2dd03dad62c75",
+   "reachability": "via requests",
+   "epss": 0.02922,
+   "kev": false,
+   "risk": 5.47,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "High resource usage when parsing multipart form data with many fields",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2023-58"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2023-25577",
+    "GHSA-xg9f-g7g7-2323",
+    "PYSEC-2023-58"
+   ],
+   "fix_versions": [
+    "2.2.3"
+   ],
+   "fingerprint": "55893aefd2dfea34",
+   "reachability": "via flask",
+   "epss": 0.0142,
+   "kev": false,
+   "risk": 5.18,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "`Cookie` HTTP header isn't stripped on cross-origin redirects",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2023-192"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2023-43804",
+    "GHSA-v845-jxx5-vc9f",
+    "PYSEC-2023-192"
+   ],
+   "fix_versions": [
+    "1.26.17",
+    "2.0.6"
+   ],
+   "fingerprint": "fdac2979e6331863",
+   "reachability": "via requests",
+   "epss": 0.0136,
+   "kev": false,
+   "risk": 5.17,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "urllib3 allows an unbounded number of links in the decompression chain",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1998"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2025-66418",
+    "GHSA-gm62-xv2j-4w53",
+    "PYSEC-2026-1998"
+   ],
+   "fix_versions": [
+    "2.6.0"
+   ],
+   "fingerprint": "d0c632a7ac5ba6bb",
+   "reachability": "via requests",
+   "epss": 0.00682,
+   "kev": false,
+   "risk": 5.03,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "urllib3 streaming API improperly handles highly compressed data",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1994"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2025-66471",
+    "GHSA-2xpw-w6gg-jr37",
+    "PYSEC-2026-1994"
+   ],
+   "fix_versions": [
+    "2.6.0"
+   ],
+   "fingerprint": "fab9d72ff6b57ba3",
+   "reachability": "via requests",
+   "epss": 0.00682,
+   "kev": false,
+   "risk": 5.03,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "urllib3: Sensitive headers forwarded across origins in proxied low-level redirects",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-141"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2026-44431",
+    "GHSA-qccp-gfcp-xxvc",
+    "PYSEC-2026-141"
+   ],
+   "fix_versions": [
+    "2.7.0"
+   ],
+   "fingerprint": "d7bad4cc1266df3c",
+   "reachability": "via requests",
+   "epss": 0.00339,
+   "kev": false,
+   "risk": 4.97,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-4177"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2026-97689",
+    "GHSA-vxq7-64xx-v4gw",
+    "PYSEC-2026-4177"
+   ],
+   "fix_versions": [
+    "2.8.0"
+   ],
+   "fingerprint": "49de6e102622530d",
+   "reachability": "via requests",
+   "epss": 0.00335,
+   "kev": false,
+   "risk": 4.97,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "urllib3: HTTPS proxy TLS configuration may be ignored or overridden",
+   "severity": "high",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-4175"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2026-97687",
+    "GHSA-8988-9cw3-xx77",
+    "PYSEC-2026-4175"
+   ],
+   "fix_versions": [
+    "2.8.0"
+   ],
+   "fingerprint": "db9171472161b768",
+   "reachability": "via requests",
+   "epss": 0.00206,
+   "kev": false,
+   "risk": 4.94,
+   "due_days": 30,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Unintended leak of Proxy-Authorization header in requests",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2023-74"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 5,
+   "snippet": null,
+   "cwe": [],
+   "package": "requests",
+   "version": "2.28.0",
+   "advisories": [
+    "CVE-2023-32681",
+    "GHSA-j8r2-6x86-q33q",
+    "PYSEC-2023-74"
+   ],
+   "fix_versions": [
+    "2.31.0"
+   ],
+   "fingerprint": "7c0a0c7bd6bd83ff",
+   "reachability": "direct",
+   "epss": 0.02974,
+   "kev": false,
+   "risk": 4.48,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Requests vulnerable to .netrc credentials leak via malicious URLs",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1872"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 5,
+   "snippet": null,
+   "cwe": [],
+   "package": "requests",
+   "version": "2.28.0",
+   "advisories": [
+    "CVE-2024-47081",
+    "GHSA-9hjg-9r4m-mvj7",
+    "PYSEC-2026-1872"
+   ],
+   "fix_versions": [
+    "2.32.4"
+   ],
+   "fingerprint": "a98dda65ededda68",
+   "reachability": "direct",
+   "epss": 0.0098,
+   "kev": false,
+   "risk": 4.16,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "PyJWT: PyJWKClient still amplifies unauthenticated JWKS fetches on unknown kid values (incomplete fix of CVE-2026-48524)",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-4140"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-101917",
+    "GHSA-2gx3-rcp4-g85q",
+    "PYSEC-2026-4140"
+   ],
+   "fix_versions": [
+    "2.14.0"
+   ],
+   "fingerprint": "9c6840d2c19c25e7",
+   "reachability": "direct",
+   "epss": 0.00418,
+   "kev": false,
+   "risk": 4.07,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Requests `Session` object does not verify requests after making first request with verify=False",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1873"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 5,
+   "snippet": null,
+   "cwe": [],
+   "package": "requests",
+   "version": "2.28.0",
+   "advisories": [
+    "CVE-2024-35195",
+    "GHSA-9wx4-h78v-vm56",
+    "PYSEC-2026-1873"
+   ],
+   "fix_versions": [
+    "2.32.0"
+   ],
+   "fingerprint": "c0799abaff15055e",
+   "reachability": "direct",
+   "epss": 0.0034,
+   "kev": false,
+   "risk": 4.05,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "PyJWKClient: missing scheme allowlist enables CVE-2024-21643-class SSRF + token forgery via file://, ftp://, data: schemes",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-175"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-48522",
+    "GHSA-993g-76c3-p5m4",
+    "PYSEC-2026-175"
+   ],
+   "fix_versions": [
+    "2.13.0"
+   ],
+   "fingerprint": "1657d96074c90f25",
+   "reachability": "direct",
+   "epss": 0.0022,
+   "kev": false,
+   "risk": 4.04,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "pyjwt v2.10.1 was discovered to contain weak encryption",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2025-183"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2025-45768",
+    "PYSEC-2025-183"
+   ],
+   "fix_versions": [],
+   "fingerprint": "d82db1fb6c12e5f5",
+   "reachability": "direct",
+   "epss": 0.00168,
+   "kev": false,
+   "risk": 4.03,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "PyJWT: ReDoS vulnerability when calling the `is_pem_format` function.",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-4148"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-102270",
+    "GHSA-jwrc-g2q2-pq5p",
+    "PYSEC-2026-4148"
+   ],
+   "fix_versions": [
+    "2.14.0"
+   ],
+   "fingerprint": "67b0a876dab17de4",
+   "reachability": "direct",
+   "epss": 0.00212,
+   "kev": false,
+   "risk": 4.03,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "PyJWT: Non-canonical signature segments enable raw-token revocation bypass",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-4147"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-102269",
+    "GHSA-hxm8-2xgr-2p9m",
+    "PYSEC-2026-4147"
+   ],
+   "fix_versions": [
+    "2.14.0"
+   ],
+   "fingerprint": "6e9ee9cda3598591",
+   "reachability": "direct",
+   "epss": 0.00191,
+   "kev": false,
+   "risk": 4.03,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-2275"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 5,
+   "snippet": null,
+   "cwe": [],
+   "package": "requests",
+   "version": "2.28.0",
+   "advisories": [
+    "CVE-2026-25645",
+    "GHSA-gc5v-m9x4-r6x2",
+    "PYSEC-2026-2275"
+   ],
+   "fix_versions": [
+    "2.33.0"
+   ],
+   "fingerprint": "c448f33a9ea967d7",
+   "reachability": "direct",
+   "epss": 0.00185,
+   "kev": false,
+   "risk": 4.03,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "code",
+   "title": "Possible SQL injection vector through string-based query construction.",
+   "severity": "medium",
+   "tools": [
+    "bandit"
+   ],
+   "rule_ids": [
+    "bandit:B608"
+   ],
+   "confidence": "medium",
+   "file": "loan-api/app.py",
+   "line": 75,
+   "snippet": "row = con.execute(f\"SELECT id, balance FROM accounts WHERE id = '{account_id}'\").fetchone()  # SQL injection",
+   "cwe": [
+    "CWE-89"
+   ],
+   "package": null,
+   "version": null,
+   "advisories": [],
+   "fix_versions": [],
+   "fingerprint": "a966dca1c2d1e361",
+   "reachability": "direct",
+   "epss": null,
+   "kev": false,
+   "risk": 4.0,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "urllib3's Proxy-Authorization request header isn't stripped during cross-origin redirects",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1995"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2024-37891",
+    "GHSA-34jh-p97f-mpxf",
+    "PYSEC-2026-1995"
+   ],
+   "fix_versions": [
+    "1.26.19",
+    "2.2.2"
+   ],
+   "fingerprint": "28a3978fe956ba66",
+   "reachability": "via requests",
+   "epss": 0.01141,
+   "kev": false,
+   "risk": 2.93,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Werkzeug DoS: High resource usage when parsing multipart/form-data containing a large part with CR/LF character at the beginning",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2023-221"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2023-46136",
+    "GHSA-hrfv-mqp8-q5rw",
+    "PYSEC-2023-221"
+   ],
+   "fix_versions": [
+    "2.3.8",
+    "3.0.1"
+   ],
+   "fingerprint": "790f36f69c8b25bd",
+   "reachability": "via flask",
+   "epss": 0.01072,
+   "kev": false,
+   "risk": 2.92,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Werkzeug possible resource exhaustion when parsing file data in forms",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1860",
+    "PYSEC-2026-3417"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2024-49767",
+    "GHSA-q34m-jh98-gwm2",
+    "PYSEC-2026-1860",
+    "PYSEC-2026-3417"
+   ],
+   "fix_versions": [
+    "3.0.6"
+   ],
+   "fingerprint": "c94fb179b3ce44c4",
+   "reachability": "via flask",
+   "epss": 0.01095,
+   "kev": false,
+   "risk": 2.92,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1474"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 4,
+   "snippet": null,
+   "cwe": [],
+   "package": "jinja2",
+   "version": "3.1.2",
+   "advisories": [
+    "CVE-2024-34064",
+    "GHSA-h75v-3vvj-5mfj",
+    "PYSEC-2026-1474"
+   ],
+   "fix_versions": [
+    "3.1.4"
+   ],
+   "fingerprint": "da04d42bf6987df0",
+   "reachability": "via flask",
+   "epss": 0.00979,
+   "kev": false,
+   "risk": 2.91,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Jinja vulnerable to HTML attribute injection when passing user input as keys to xmlattr filter",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1473"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 4,
+   "snippet": null,
+   "cwe": [],
+   "package": "jinja2",
+   "version": "3.1.2",
+   "advisories": [
+    "CVE-2024-22195",
+    "GHSA-h5c8-rqwp-cp95",
+    "PYSEC-2026-1473"
+   ],
+   "fix_versions": [
+    "3.1.3"
+   ],
+   "fingerprint": "c9e951d5498fbd1a",
+   "reachability": "via flask",
+   "epss": 0.00892,
+   "kev": false,
+   "risk": 2.9,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Werkzeug safe_join not safe on Windows",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-2045"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2024-49766",
+    "GHSA-f9vj-2wh5-fj8j",
+    "PYSEC-2026-2045"
+   ],
+   "fix_versions": [
+    "3.0.6"
+   ],
+   "fingerprint": "6f2ae44a52f57e6a",
+   "reachability": "via flask",
+   "epss": 0.00776,
+   "kev": false,
+   "risk": 2.89,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "urllib3's request body not stripped after redirect from 303 status changes request method to GET",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2023-212"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2023-45803",
+    "GHSA-g4mx-q9vg-27p4",
+    "PYSEC-2023-212"
+   ],
+   "fix_versions": [
+    "1.26.18",
+    "2.0.7"
+   ],
+   "fingerprint": "4ff3ea150047e134",
+   "reachability": "via requests",
+   "epss": 0.00593,
+   "kev": false,
+   "risk": 2.87,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": " Werkzeug safe_join() allows Windows special device names",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-2320"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2026-27199",
+    "GHSA-29vq-49wr-vm6x",
+    "PYSEC-2026-2320"
+   ],
+   "fix_versions": [
+    "3.1.6"
+   ],
+   "fingerprint": "0f12e3149d84111c",
+   "reachability": "via flask",
+   "epss": 0.00607,
+   "kev": false,
+   "risk": 2.87,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Jinja has a sandbox breakout through indirect reference to format method",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1475"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 4,
+   "snippet": null,
+   "cwe": [],
+   "package": "jinja2",
+   "version": "3.1.2",
+   "advisories": [
+    "CVE-2024-56326",
+    "GHSA-q2x7-8rv6-6q7h",
+    "PYSEC-2026-1475"
+   ],
+   "fix_versions": [
+    "3.1.5"
+   ],
+   "fingerprint": "96879077296b887e",
+   "reachability": "via flask",
+   "epss": 0.00522,
+   "kev": false,
+   "risk": 2.86,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Jinja2 vulnerable to sandbox breakout through attr filter selecting format method",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1471"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 4,
+   "snippet": null,
+   "cwe": [],
+   "package": "jinja2",
+   "version": "3.1.2",
+   "advisories": [
+    "CVE-2025-27516",
+    "GHSA-cpwx-vrp4-4pq7",
+    "PYSEC-2026-1471"
+   ],
+   "fix_versions": [
+    "3.1.6"
+   ],
+   "fingerprint": "3e11c90a25ea459a",
+   "reachability": "via flask",
+   "epss": 0.00507,
+   "kev": false,
+   "risk": 2.86,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Werkzeug safe_join() allows Windows special device names",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-2046"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2025-66221",
+    "GHSA-hgf8-39gv-g3f2",
+    "PYSEC-2026-2046"
+   ],
+   "fix_versions": [
+    "3.1.4"
+   ],
+   "fingerprint": "2a6fea7d94ced1a1",
+   "reachability": "via flask",
+   "epss": 0.00511,
+   "kev": false,
+   "risk": 2.86,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1999"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 6,
+   "snippet": null,
+   "cwe": [],
+   "package": "urllib3",
+   "version": "1.26.5",
+   "advisories": [
+    "CVE-2025-50181",
+    "GHSA-pq67-6m6q-mj2v",
+    "PYSEC-2026-1999"
+   ],
+   "fix_versions": [
+    "2.5.0"
+   ],
+   "fingerprint": "98e24ffa6d284192",
+   "reachability": "via requests",
+   "epss": 0.00474,
+   "kev": false,
+   "risk": 2.85,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": " Werkzeug safe_join() allows Windows special device names with compound extensions",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-2044"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2026-21860",
+    "GHSA-87hc-h4r5-73f7",
+    "PYSEC-2026-2044"
+   ],
+   "fix_versions": [
+    "3.1.5"
+   ],
+   "fingerprint": "27399e9da555ad75",
+   "reachability": "via flask",
+   "epss": 0.00475,
+   "kev": false,
+   "risk": 2.85,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Werkzeug safe_join() allows Windows special device names",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-4312"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2026-102598",
+    "GHSA-g6x2-hccm-hh4m",
+    "PYSEC-2026-4312"
+   ],
+   "fix_versions": [
+    "3.1.9"
+   ],
+   "fingerprint": "97dd4d2af74c0a58",
+   "reachability": "via flask",
+   "epss": 0.00368,
+   "kev": false,
+   "risk": 2.84,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Jinja has a sandbox breakout through malicious filenames",
+   "severity": "medium",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-1472"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 4,
+   "snippet": null,
+   "cwe": [],
+   "package": "jinja2",
+   "version": "3.1.2",
+   "advisories": [
+    "CVE-2024-56201",
+    "GHSA-gmj6-6f8f-6699",
+    "PYSEC-2026-1472"
+   ],
+   "fix_versions": [
+    "3.1.5"
+   ],
+   "fingerprint": "8514bd6216a9f7e1",
+   "reachability": "via flask",
+   "epss": 0.00307,
+   "kev": false,
+   "risk": 2.83,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "code",
+   "title": "Call to requests without timeout",
+   "severity": "medium",
+   "tools": [
+    "bandit"
+   ],
+   "rule_ids": [
+    "bandit:B113"
+   ],
+   "confidence": "low",
+   "file": "loan-api/app.py",
+   "line": 88,
+   "snippet": "resp = requests.get(\"https://example.com/rates.json\")  # no timeout",
+   "cwe": [
+    "CWE-400"
+   ],
+   "package": null,
+   "version": null,
+   "advisories": [],
+   "fix_versions": [],
+   "fingerprint": "64d6f3d1d9c1ef14",
+   "reachability": "direct",
+   "epss": null,
+   "kev": false,
+   "risk": 2.4,
+   "due_days": 90,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "Flask session does not add `Vary: Cookie` header when accessed in some ways",
+   "severity": "low",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-2151"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 2,
+   "snippet": null,
+   "cwe": [],
+   "package": "flask",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2026-27205",
+    "GHSA-68rp-wp8r-4726",
+    "PYSEC-2026-2151"
+   ],
+   "fix_versions": [
+    "3.1.3"
+   ],
+   "fingerprint": "aff3b09a9ccf7b8f",
+   "reachability": "direct",
+   "epss": 0.00485,
+   "kev": false,
+   "risk": 1.02,
+   "due_days": 180,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "dependency",
+   "title": "PyJWKClient unbounded JWKS endpoint requests via attacker-controlled kid values (DoS)",
+   "severity": "low",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2026-177"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 7,
+   "snippet": null,
+   "cwe": [],
+   "package": "pyjwt",
+   "version": "1.7.1",
+   "advisories": [
+    "CVE-2026-48524",
+    "GHSA-fhv5-28vv-h8m8",
+    "PYSEC-2026-177"
+   ],
+   "fix_versions": [
+    "2.13.0"
+   ],
+   "fingerprint": "fd80bc7f02e01b49",
+   "reachability": "direct",
+   "epss": 0.00321,
+   "kev": false,
+   "risk": 1.01,
+   "due_days": 180,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  },
+  {
+   "kind": "code",
+   "title": "Consider possible security implications associated with the subprocess module.",
+   "severity": "low",
+   "tools": [
+    "bandit"
+   ],
+   "rule_ids": [
+    "bandit:B404"
+   ],
+   "confidence": "high",
+   "file": "loan-api/app.py",
+   "line": 7,
+   "snippet": "import subprocess",
+   "cwe": [
+    "CWE-78"
+   ],
+   "package": null,
+   "version": null,
+   "advisories": [],
+   "fix_versions": [],
+   "fingerprint": "f589d1949ffd7060",
+   "reachability": "direct",
+   "epss": null,
+   "kev": false,
+   "risk": 1.0,
+   "due_days": 180,
+   "status": "suppressed",
+   "is_new": true,
+   "suppression": {
+    "rule": "bandit:B404",
+    "path": "loan-api/app.py",
+    "reason": "Importing subprocess is not itself a vulnerability; the shell=True call on line 94 is tracked separately.",
+    "owner": "loan-platform-team",
+    "expires": "2027-04-30"
+   }
+  },
+  {
+   "kind": "dependency",
+   "title": "Incorrect parsing of nameless cookies leads to __Host- cookies bypass",
+   "severity": "low",
+   "tools": [
+    "pip-audit"
+   ],
+   "rule_ids": [
+    "PYSEC-2023-57"
+   ],
+   "confidence": "high",
+   "file": "loan-api/requirements.txt",
+   "line": 3,
+   "snippet": null,
+   "cwe": [],
+   "package": "werkzeug",
+   "version": "2.2.2",
+   "advisories": [
+    "CVE-2023-23934",
+    "GHSA-px8h-6qxv-m22q",
+    "PYSEC-2023-57"
+   ],
+   "fix_versions": [
+    "2.2.3"
+   ],
+   "fingerprint": "566f164fb85a5570",
+   "reachability": "via flask",
+   "epss": 0.00507,
+   "kev": false,
+   "risk": 0.71,
+   "due_days": 180,
+   "status": "open",
+   "is_new": true,
+   "suppression": null
+  }
+ ],
+ "blocking": [
+  "2ca56267a473a8fa",
+  "f51eaab8ca41f705",
+  "ff97ff71397138e6",
+  "81bb305ca02c1049",
+  "c45969ebb59b3495",
+  "6235cc6d88668752",
+  "98684ac114dacbae",
+  "e68b72c1a4eb0fd4",
+  "73e646a0318f29c1",
+  "bab5607fab6a0026",
+  "065c4b1d875ada8a",
+  "2e72e49e3e9cef81",
+  "bbc2dd03dad62c75",
+  "55893aefd2dfea34",
+  "fdac2979e6331863",
+  "d0c632a7ac5ba6bb",
+  "fab9d72ff6b57ba3",
+  "d7bad4cc1266df3c",
+  "49de6e102622530d",
+  "db9171472161b768"
+ ],
+ "expired_suppressions": [
+  "{'rule': 'bandit:B113', 'path': 'loan-api/app.py', 'reason': 'Temporary exception while the rates feed client is replaced.', 'owner': 'loan-platform-team', 'expires': datetime.date(2026, 9, 30)}"
+ ],
+ "remediation": {
+  "shipped": [
+   {
+    "package": "jinja2",
+    "current": "3.1.2",
+    "target": "3.1.6",
+    "fixes": [
+     "CVE-2024-22195",
+     "CVE-2024-34064",
+     "CVE-2024-56201",
+     "CVE-2024-56326",
+     "CVE-2025-27516"
+    ],
+    "companion_of": null
+   },
+   {
+    "package": "requests",
+    "current": "2.28.0",
+    "target": "2.33.0",
+    "fixes": [
+     "CVE-2023-32681",
+     "CVE-2024-35195",
+     "CVE-2024-47081",
+     "CVE-2026-25645"
+    ],
+    "companion_of": null
+   },
+   {
+    "package": "urllib3",
+    "current": "1.26.5",
+    "target": "2.8.0",
+    "fixes": [
+     "CVE-2023-43804",
+     "CVE-2023-45803",
+     "CVE-2024-37891",
+     "CVE-2025-50181",
+     "CVE-2025-66418",
+     "CVE-2025-66471",
+     "CVE-2026-21441",
+     "CVE-2026-44431",
+     "CVE-2026-97687",
+     "CVE-2026-97689"
+    ],
+    "companion_of": null
+   },
+   {
+    "package": "flask",
+    "current": "2.2.2",
+    "target": "3.1.3",
+    "fixes": [
+     "CVE-2023-30861",
+     "CVE-2026-27205"
+    ],
+    "companion_of": null
+   },
+   {
+    "package": "werkzeug",
+    "current": "2.2.2",
+    "target": "3.1.9",
+    "fixes": [
+     "CVE-2023-23934",
+     "CVE-2023-25577",
+     "CVE-2023-46136",
+     "CVE-2024-34069",
+     "CVE-2024-49766",
+     "CVE-2024-49767",
+     "CVE-2025-66221",
+     "CVE-2026-102598",
+     "CVE-2026-21860",
+     "CVE-2026-27199"
+    ],
+    "companion_of": null
+   }
+  ],
+  "needs_code_change": [
+   {
+    "upgrade": {
+     "package": "pyjwt",
+     "current": "1.7.1",
+     "target": "2.14.0",
+     "fixes": [
+      "CVE-2022-29217",
+      "CVE-2025-45768",
+      "CVE-2026-101917",
+      "CVE-2026-102267",
+      "CVE-2026-102268",
+      "CVE-2026-102269",
+      "CVE-2026-102270",
+      "CVE-2026-32597",
+      "CVE-2026-48522",
+      "CVE-2026-48524",
+      "CVE-2026-48526"
+     ],
+     "companion_of": null
+    },
+    "failed": [
+     "tests/test_app.py::test_other_accounts_are_forbidden",
+     "tests/test_app.py::test_token_round_trip_and_account_access"
+    ],
+    "detail": "E       AttributeError: 'str' object has no attribute 'decode'"
+   }
+  ],
+  "no_fix_available": [],
+  "runs": [
+   {
+    "try": "current pins",
+    "packages": [],
+    "passed": true,
+    "failed": [],
+    "seconds": 0.9
+   },
+   {
+    "try": "all at once",
+    "packages": [
+     "flask==3.1.3",
+     "jinja2==3.1.6",
+     "pyjwt==2.14.0",
+     "requests==2.33.0",
+     "urllib3==2.8.0",
+     "werkzeug==3.1.9"
+    ],
+    "passed": false,
+    "failed": [
+     "tests/test_app.py::test_other_accounts_are_forbidden",
+     "tests/test_app.py::test_token_round_trip_and_account_access"
+    ],
+    "seconds": 1.1
+   },
+   {
+    "try": "split",
+    "packages": [
+     "flask==3.1.3",
+     "jinja2==3.1.6",
+     "pyjwt==2.14.0"
+    ],
+    "passed": false,
+    "failed": [
+     "<install>"
+    ],
+    "seconds": 0.0
+   },
+   {
+    "try": "split",
+    "packages": [
+     "flask==3.1.3"
+    ],
+    "passed": false,
+    "failed": [
+     "<install>"
+    ],
+    "seconds": 0.0
+   },
+   {
+    "try": "split",
+    "packages": [
+     "jinja2==3.1.6",
+     "pyjwt==2.14.0"
+    ],
+    "passed": false,
+    "failed": [
+     "tests/test_app.py::test_other_accounts_are_forbidden",
+     "tests/test_app.py::test_token_round_trip_and_account_access"
+    ],
+    "seconds": 0.9
+   },
+   {
+    "try": "split",
+    "packages": [
+     "jinja2==3.1.6"
+    ],
+    "passed": true,
+    "failed": [],
+    "seconds": 0.8
+   },
+   {
+    "try": "split",
+    "packages": [
+     "pyjwt==2.14.0"
+    ],
+    "passed": false,
+    "failed": [
+     "tests/test_app.py::test_other_accounts_are_forbidden",
+     "tests/test_app.py::test_token_round_trip_and_account_access"
+    ],
+    "seconds": 0.9
+   },
+   {
+    "try": "split",
+    "packages": [
+     "requests==2.33.0",
+     "urllib3==2.8.0",
+     "werkzeug==3.1.9"
+    ],
+    "passed": false,
+    "failed": [
+     "tests/test_app.py"
+    ],
+    "seconds": 1.0
+   },
+   {
+    "try": "split",
+    "packages": [
+     "requests==2.33.0"
+    ],
+    "passed": true,
+    "failed": [],
+    "seconds": 1.0
+   },
+   {
+    "try": "split",
+    "packages": [
+     "urllib3==2.8.0",
+     "werkzeug==3.1.9"
+    ],
+    "passed": false,
+    "failed": [
+     "tests/test_app.py"
+    ],
+    "seconds": 1.0
+   },
+   {
+    "try": "split",
+    "packages": [
+     "urllib3==2.8.0"
+    ],
+    "passed": true,
+    "failed": [],
+    "seconds": 1.0
+   },
+   {
+    "try": "split",
+    "packages": [
+     "werkzeug==3.1.9"
+    ],
+    "passed": false,
+    "failed": [
+     "tests/test_app.py"
+    ],
+    "seconds": 1.0
+   },
+   {
+    "try": "flask with werkzeug",
+    "packages": [
+     "flask==3.1.3",
+     "werkzeug==3.1.9"
+    ],
+    "passed": true,
+    "failed": [],
+    "seconds": 1.0
+   }
+  ]
+ }
+}

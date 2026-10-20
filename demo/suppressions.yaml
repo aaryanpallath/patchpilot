@@ -1,0 +1,12 @@
+# Accepted risks. Every entry needs a reason, an owner and an expiry; expired entries stop suppressing and are
+# reported, so an exception can't quietly become permanent.
+- rule: "bandit:B404"
+  path: loan-api/app.py
+  reason: Importing subprocess is not itself a vulnerability; the shell=True call on line 94 is tracked separately.
+  owner: loan-platform-team
+  expires: 2027-04-30
+- rule: "bandit:B113"
+  path: loan-api/app.py
+  reason: Temporary exception while the rates feed client is replaced.
+  owner: loan-platform-team
+  expires: 2026-09-30

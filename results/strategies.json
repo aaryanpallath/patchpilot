@@ -1,0 +1,129 @@
+{
+ "simulation": [
+  {
+   "upgrades": 6,
+   "breaking": 0,
+   "one_at_a_time": 7,
+   "split_search_mean": 1.0,
+   "split_search_max": 1,
+   "all_at_once_ships": "all"
+  },
+  {
+   "upgrades": 6,
+   "breaking": 1,
+   "one_at_a_time": 7,
+   "split_search_mean": 6.3,
+   "split_search_max": 7,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 6,
+   "breaking": 2,
+   "one_at_a_time": 7,
+   "split_search_mean": 8.7,
+   "split_search_max": 11,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 6,
+   "breaking": 3,
+   "one_at_a_time": 7,
+   "split_search_mean": 10.0,
+   "split_search_max": 11,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 6,
+   "breaking": 5,
+   "one_at_a_time": 7,
+   "split_search_mean": 11.0,
+   "split_search_max": 11,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 20,
+   "breaking": 0,
+   "one_at_a_time": 21,
+   "split_search_mean": 1.0,
+   "split_search_max": 1,
+   "all_at_once_ships": "all"
+  },
+  {
+   "upgrades": 20,
+   "breaking": 1,
+   "one_at_a_time": 21,
+   "split_search_mean": 9.9,
+   "split_search_max": 11,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 20,
+   "breaking": 2,
+   "one_at_a_time": 21,
+   "split_search_mean": 15.3,
+   "split_search_max": 19,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 20,
+   "breaking": 3,
+   "one_at_a_time": 21,
+   "split_search_mean": 19.3,
+   "split_search_max": 25,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 20,
+   "breaking": 5,
+   "one_at_a_time": 21,
+   "split_search_mean": 25.1,
+   "split_search_max": 33,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 50,
+   "breaking": 0,
+   "one_at_a_time": 51,
+   "split_search_mean": 1.0,
+   "split_search_max": 1,
+   "all_at_once_ships": "all"
+  },
+  {
+   "upgrades": 50,
+   "breaking": 1,
+   "one_at_a_time": 51,
+   "split_search_mean": 12.4,
+   "split_search_max": 13,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 50,
+   "breaking": 2,
+   "one_at_a_time": 51,
+   "split_search_mean": 20.0,
+   "split_search_max": 23,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 50,
+   "breaking": 3,
+   "one_at_a_time": 51,
+   "split_search_mean": 26.5,
+   "split_search_max": 31,
+   "all_at_once_ships": "nothing"
+  },
+  {
+   "upgrades": 50,
+   "breaking": 5,
+   "one_at_a_time": 51,
+   "split_search_mean": 37.2,
+   "split_search_max": 45,
+   "all_at_once_ships": "nothing"
+  }
+ ],
+ "demo": {
+  "test_runs": 13,
+  "shipped": 5,
+  "needs_code_change": 1
+ }
+}
