@@ -4,12 +4,15 @@ on:
   pull_request:
   schedule:
     - cron: "0 12 * * 1"   # weekly: new advisories appear without any code change
+permissions:
+  contents: read   # least privilege by default; the pipeline job adds what it needs
+
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
       - run: uv sync
       - run: uv run ruff check .
       - run: uv run pytest -q
@@ -22,17 +25,17 @@ jobs:
       contents: read
       security-events: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
       - run: uv sync
       - name: Scan the demo service
         working-directory: demo
         run: |
           mkdir -p live
-          uvx bandit -r loan-api -x loan-api/tests -f json -o live/bandit.json || true
-          uvx --from semgrep semgrep scan --config p/python --sarif --output live/semgrep.sarif --metrics=off loan-api || true
-          uvx pip-audit -r loan-api/requirements.txt -f json -o live/pip-audit.json --progress-spinner off || true
-          (cd loan-api && uvx detect-secrets scan app.py > ../live/detect-secrets.json)
+          uvx bandit@1.9.4 -r loan-api -x loan-api/tests -f json -o live/bandit.json || true
+          uvx --from semgrep==1.181.0 semgrep scan --config p/python --sarif --output live/semgrep.sarif --metrics=off loan-api || true
+          uvx pip-audit@2.10.1 -r loan-api/requirements.txt -f json -o live/pip-audit.json --progress-spinner off || true
+          (cd loan-api && uvx detect-secrets@1.5.0 scan app.py > ../live/detect-secrets.json)
       - name: Triage, gate against the baseline, and remediate
         id: triage
         continue-on-error: true   # advisories published after the baseline should fail this; it is informational here
@@ -44,11 +47,11 @@ jobs:
           --intel .patchpilot-cache/intel.json --baseline demo/baseline.json --suppressions demo/suppressions.yaml
           --report report.md --sarif-out patchpilot.sarif --remediate --requirements-out requirements.patchpilot.txt
       - run: cat report.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: github/codeql-action/upload-sarif@v3
+      - uses: github/codeql-action/upload-sarif@ce5e7eeac396d720fe2d802714996c8ce561e311 # v3
         with:
           sarif_file: patchpilot.sarif
           category: patchpilot
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: security-triage
           path: |
