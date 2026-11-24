@@ -47,7 +47,7 @@ jobs:
           --intel .patchpilot-cache/intel.json --baseline demo/baseline.json --suppressions demo/suppressions.yaml
           --report report.md --sarif-out patchpilot.sarif --remediate --requirements-out requirements.patchpilot.txt
       - run: cat report.md >> "$GITHUB_STEP_SUMMARY"
-      - uses: github/codeql-action/upload-sarif@ce5e7eeac396d720fe2d802714996c8ce561e311 # v3
+      - uses: github/codeql-action/upload-sarif@1bd86f2fdb4b86187fa4059f16f31a3202acc9ea # v3
         with:
           sarif_file: patchpilot.sarif
           category: patchpilot
